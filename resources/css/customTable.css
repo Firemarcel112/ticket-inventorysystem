@@ -1,0 +1,71 @@
+.customTableWrapper {
+    @apply max-w-[1600px] max-h-[1000px] relative overflow-auto scroll-smooth
+}
+.customDuoTableWrapper {
+    @apply overflow-y-auto max-h-[500px];
+}
+
+.customTableWrapper table, .customDuoTableWrapper table {
+    @apply relative
+}
+
+.customTableWrapper thead, .customDuoTableWrapper thead {
+    @apply w-full sticky top-0 z-50;
+}
+.customTableWrapper thead tr, .customDuoTableWrapper thead tr {
+    @apply bg-lightthead dark:bg-darkthead dark:text-white text-black leading-8;
+}
+
+.customTableWrapper td, .customTableWrapper td a, .customTableWrapper thead th, .customDuoTableWrapper td, .customDuoTableWrapper td a, .customDuoTableWrapper thead th {
+    @apply flex px-1 py-1 md:table-cell text-left text-lg md:text-sm lg:text-base 2xl:text-lg whitespace-normal md:whitespace-nowrap
+}
+.customTableWrapper thead th, .customDuoTableWrapper thead th {
+    @apply hidden md:table-cell
+}
+.customTableWrapper tbody tr, .customDuoTableWrapper tbody tr {
+    @apply dark:text-white text-black text-left text-base leading-8
+}
+
+.customTableWrapper tbody tr:nth-of-type(even), .customDuoTableWrapper tbody tr:nth-of-type(even){
+    @apply bg-lighttableEven dark:bg-darktableEven ;
+}
+
+.customTableWrapper tbody tr:nth-of-type(odd), .customDuoTableWrapper tbody tr:nth-of-type(odd){
+    @apply bg-lighttableOdd dark:bg-darktableOdd ;
+}
+.customTableWrapper tbody .actionsDiv, .customDuoTableWrapper tbody .actionsDiv {
+    @apply gap-2 lg:gap-8 h-full items-center flex
+}
+.customTableWrapper .tableStatus, .customDuoTableWrapper .tableStatus {
+    @apply w-3/12 md:w-6/12 h-6 cursor-pointer;
+}
+
+
+@media (max-width: 766px) {
+    .customTableWrapper table td, .customTableWrapper table td a, .customDuoTableWrapper table td, .customDuoTableWrapper table td a {
+        text-align: left;
+        font-size: 12px;
+        padding: 0 1px;
+    }
+    .customTableWrapper table td, .customDuoTableWrapper table td {
+        width: 100%;
+    }
+    .customTableWrapper table td::before, .customDuoTableWrapper table td::before {
+        content: attr(data-label) " ";
+        font-weight: 700;
+        width: 110px !important;
+        text-align: left;
+    }
+    .customTableWrapper table span, .customTableWrapper table a, .customDuoTableWrapper table span, .customDuoTableWrapper table a {
+        width: 65%;
+    }
+    .customTableWrapper td:first-child, .customDuoTableWrapper td:first-child {
+        padding-top: 1rem;
+    }
+    .customTableWrapper td:last-child, .customDuoTableWrapper td:last-child {
+        padding-bottom: 1rem;
+    }
+    .qrTable {
+        display: none;
+    }
+}

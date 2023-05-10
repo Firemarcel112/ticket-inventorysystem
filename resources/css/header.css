@@ -1,0 +1,79 @@
+header {
+    @apply fixed w-full flex items-center justify-between h-14 text-white z-10
+    bg-gray-300 dark:bg-slate-800
+}
+
+header .header--login {
+    @apply dark:hover:text-main
+}
+
+.header--logo {
+    @apply flex items-center justify-start md:justify-center pl-3 w-14 md:w-52 h-14 md:bg-main md:dark:bg-slate-900 border-none
+}
+
+.header--logo  a {
+    @apply flex items-center text-white dark:text-white
+}
+
+.header--logo  a > img {
+    @apply w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden md:border-2 md:border-white;
+}
+
+.header--logo a > span {
+    @apply hidden text-sm md:block mr-2
+}
+
+.header--user {
+    @apply flex items-center mr-4
+}
+
+.header--user .profileIcon {
+    @apply border border-main m-2 bg-main text-2xl shadow-xl h-9 aspect-square rounded-full;
+}
+
+.header--user .profileIcon > span {
+    @apply block w-full text-center
+}
+
+.header--user p {
+    @apply text-red-500 mr-2;
+}
+
+.header--user .user {
+    @apply mr-4;
+}
+
+.header--user .username {
+    @apply dark:hover:text-main hover:text-main
+}
+
+/* Notifications */
+
+.header--user .bell {
+    @apply dark:stroke-white stroke-2 stroke-white w-8 h-8 mr-2 cursor-pointer
+    hover:stroke-blue-600 dark:hover:stroke-blue-600
+}
+
+.header--user .notificationCount {
+    @apply absolute top-[-10px] right-0 bg-main dark:bg-main px-[2px] rounded-lg
+}
+
+.header--user .notification {
+    @apply  absolute top-[44px] left-[-25px] md:left-[0px] z-50 w-60 dark:bg-gray-700 bg-white border-black rounded-b-lg border-[1px] z-10
+}
+
+.header--user .notification hr {
+    @apply border-black dark:border-white
+}
+
+.notification li {
+    @apply m-2
+}
+
+.notification .warning {
+    @apply text-orange-700 font-bold text-sm;
+}
+
+.notification .expired {
+    @apply text-red-600 font-bold text-sm;
+}

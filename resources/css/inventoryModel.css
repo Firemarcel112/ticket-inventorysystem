@@ -1,0 +1,81 @@
+.inventoryDashboardWrapper {
+    @apply xl:grid xl:grid-cols-2 px-1 pt-4 xl:gap-x-4 mb-4 bg-white dark:bg-slate-800;
+}
+
+.inventoryDashboardH2 {
+    @apply text-3xl text-black dark:text-white font-bold mb-2 lg:mb-10 mt-10 text-center;
+}
+#test{
+    color: #1e7e34;
+}
+
+/*.inventoryContentTable,*/
+/*.faqContentTable {*/
+/*    @apply relative overflow-auto overflow-x-hidden h-96 hidden sm:block;*/
+/*}*/
+
+/*.inventoryContentTable thead,*/
+/*.faqContentTable thead*/
+/*{*/
+/*    @apply w-full sticky overflow-auto top-0;*/
+/*}*/
+
+/*.inventoryContentTable thead tr,*/
+/*.faqContentTable thead tr {*/
+/*    @apply bg-gray-300 dark:bg-slate-900 dark:text-white text-black leading-8;*/
+/*}*/
+
+/*.inventoryContentTable tbody tr:nth-of-type(odd),*/
+/*.faqContentTable tbody tr:nth-of-type(even){*/
+/*    @apply bg-gray-200 dark:bg-slate-600 dark:text-white text-black text-center text-base leading-8;*/
+/*}*/
+
+/*.inventoryContentTable tbody tr:nth-of-type(even),*/
+/*.faqContentTable tbody tr:nth-of-type(odd) {*/
+/*    @apply bg-gray-100 dark:bg-slate-500 dark:text-white text-black text-center text-base leading-8;*/
+/*}*/
+
+/*.inventoryDashboardHyperLinks {*/
+/*    @apply text-blue-600 dark:text-green-200 text-base;*/
+/*}*/
+
+/*.inventoryContentCard {*/
+/*    @apply block sm:hidden;*/
+/*}*/
+
+/*.inventoryContentCardWrapper {*/
+/*    @apply w-full overflow-auto max-h-[400px];*/
+/*}*/
+
+/*.inventoryContentCardDiv:nth-of-type(even) {*/
+/*    @apply bg-gray-200 dark:bg-slate-600 dark:text-white text-black text-base pt-2 pb-2;*/
+/*}*/
+
+/*.inventoryContentCardDiv:nth-of-type(odd) {*/
+/*    @apply bg-gray-100 dark:bg-slate-500 dark:text-white text-black text-base pt-2 pb-2;*/
+/*}*/
+
+/*.inventoryContentCardCategorie {*/
+/*    @apply text-lg dark:text-white text-black ml-2 leading-none font-bold;*/
+/*}*/
+
+/*.inventoryContentCardCategorieInput {*/
+/*    @apply z-20 ml-6 mb-2 text-base;*/
+/*}*/
+
+/*.inventoryDashboardButton {*/
+/*    @apply w-full mt-0.5;*/
+/*}*/
+
+/*.inventoryDashboardButton button{*/
+/*    @apply w-full flex mx-auto items-center justify-center p-0.5 overflow-hidden text-xl font-medium text-gray-900 rounded-lg bg-gradient-to-br from-red-500 to-main dark:bg-gradient-to-br dark:from-cyan-500 dark:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800;*/
+/*}*/
+
+/*.inventoryDashboardButton button span {*/
+/*    @apply w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md;*/
+/*}*/
+
+
+/*.invTable {*/
+/*    @apply  @apply xl:grid xl:grid-cols-2 px-1 pt-4 xl:gap-x-4 mb-4 bg-white dark:bg-slate-800;*/
+/*}*/

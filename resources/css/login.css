@@ -1,0 +1,44 @@
+main .login {
+    @apply flex items-center justify-center min-h-screen
+}
+
+.loginForm {
+    @apply mx-auto my-auto w-11/12 md:w-2/3 max-w-lg py-5 px-5 md:px-10 bg-white dark:bg-slate-900
+    border border-gray-400 dark:border-black shadow-xl rounded-3xl min-h-[600px]
+}
+
+.logo {
+    @apply w-36 h-32 text-gray-600 mb-3 mx-auto bg-main
+}
+
+.logo > img {
+    @apply w-full h-full
+}
+
+.login h1 {
+    @apply text-main dark:text-main mb-10
+}
+
+.login input[type="text"], input[type="password"] {
+    @apply w-full
+}
+
+.login .togglePW {
+    @apply absolute right-1 top-2 pr-0 cursor-pointer w-8 h-8
+}
+
+.login .togglePW svg {
+    @apply w-8 h-8
+}
+
+.login .togglePW svg > path {
+    @apply stroke-black dark:stroke-white dark:fill-white
+}
+
+.login .buttons {
+    @apply flex justify-center gap-6 md:gap-12
+}
+
+.login input[type="text"] {
+    width: 100%;
+}

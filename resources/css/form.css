@@ -1,0 +1,37 @@
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="number"], input[type="url"], select, textarea, .inputTextareaCustom{
+    @apply bg-white dark:bg-slate-800 placeholder:text-slate-700
+    mt-1 h-10 pl-3
+    text-black text-sm
+    border border-gray-300 rounded
+    dark:text-white dark:placeholder:text-white
+}
+
+label {
+    @apply text-gray-800 dark:text-white pt-3 inline-block;
+}
+
+input.inputTextCustom {
+    @apply w-full;
+}
+.inputTextareaCustom {
+    @apply w-full h-48;
+}
+.formButtons {
+    @apply flex gap-4 md:gap-12 mt-4 w-full;
+}
+
+.subTextInput {
+    @apply text-black dark:text-white block
+}
+
+input[type='file'] {
+    @apply block w-full text-sm text-black cursor-pointer dark:text-white focus:outline-none dark:bg-gray-800;
+}
+
+input[type='checkbox'] {
+    @apply w-[22px] aspect-square;
+}
+
+.requiredInput:after {
+    content: " *";
+}

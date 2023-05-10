@@ -1,0 +1,143 @@
+aside {
+    @apply fixed flex flex-col mt-14 left-0 w-14 bg-main border-none z-[9] text-white h-full
+    hover:w-52
+    md:w-52
+    dark:bg-gray-900
+}
+
+aside div:nth-child(1) {
+    @apply overflow-y-auto overflow-x-hidden flex flex-col justify-between h-[90%]
+}
+
+.navLink {
+    @apply relative flex flex-row items-center h-11 hover:bg-gray-400 dark:hover:bg-gray-600 text-black hover:text-white border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6
+}
+
+.navLinkDropdown {
+    @apply ml-[21px] relative flex flex-row items-center h-10 hover:bg-gray-400 dark:hover:bg-gray-600 text-black hover:text-white border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6
+}
+
+.navLinkDropdown  .navText {
+    @apply text-xs
+}
+
+.active {
+    @apply bg-gray-400 dark:bg-gray-600
+}
+
+.navText {
+    @apply ml-2 text-sm tracking-wide truncate text-white dark:text-white
+}
+
+.icon {
+    @apply inline-flex justify-center items-center w-5 h-5 ml-5;
+}
+
+.sidebarText {
+    @apply px-4 hidden md:block text-center text-sm;
+}
+
+
+/*Toggle Day/Night mode*/
+#toggleMainWrapper {
+    /*@apply pt-[10px];*/
+}
+#toggleWrapper {
+    @apply flex items-center h-[30px];
+}
+
+.toggle_switch{
+    @apply relative w-[50px] h-[30px] flex justify-center
+}
+
+#nightmode {
+    @apply absolute top-[3.5px] w-[45px] h-[19px] left-[3px] rounded-full bg-slate-700;
+}
+
+input[type="checkbox"].switch_3{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    @apply appearance-none absolute top-0 right-0 bottom-0 left-0 w-full h-full cursor-pointer outline-0 z-10;
+}
+
+svg.checkbox .outer-ring{
+    stroke-dasharray: 375;
+    stroke-dashoffset: 375;
+    -webkit-animation: resetRing .35s ease-in-out forwards;
+    animation: resetRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .outer-ring{
+    -webkit-animation: animateRing .35s ease-in-out forwards;
+    animation: animateRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_checked{
+    opacity: 1;
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_unchecked{
+    opacity: 0;
+    -webkit-transform: translateX(-200%) rotate(180deg);
+    transform: translateX(-200%) rotate(180deg);
+}
+
+
+svg.checkbox{
+    @apply absolute top-0 right-0 bottom-0 left-0 w-[inherit] h-[inherit]
+}
+
+svg.checkbox .is_checked{
+    opacity: 0;
+    fill: yellow;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: translateX(200%) rotate(45deg);
+    transform: translateX(200%) rotate(45deg);
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+
+svg.checkbox .is_unchecked{
+    opacity: 1;
+    fill: #fff;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+
+@-webkit-keyframes animateRing{
+    to{
+        stroke-dashoffset: 0;
+        stroke: #b0aa28;
+    }
+}
+
+@keyframes animateRing{
+    to{
+        stroke-dashoffset: 0;
+        stroke: #b0aa28;
+    }
+}
+
+@-webkit-keyframes resetRing{
+    to{
+        stroke-dashoffset: 0;
+        stroke: #233043;
+    }
+}
+
+@keyframes resetRing{
+    to{
+        stroke-dashoffset: 0;
+        stroke: #233043;
+    }
+}
+
+
+

@@ -1,0 +1,7 @@
+.adminDashboardWrapper {
+    @apply xl:grid xl:grid-cols-2 px-1 pt-4 xl:gap-x-4 mb-4;
+}
+
+.adminDashboardH2 {
+    @apply text-3xl text-black dark:text-white font-bold mb-2 lg:mb-10 mt-10 text-center;
+}

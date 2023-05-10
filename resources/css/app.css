@@ -1,0 +1,63 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "tailwindcss/base";
+@import "main";
+@import "aside";
+/* Components */
+@import "form";
+/* Pages */
+@import "index.css";
+@import "usertickets.css";
+@import "adminDashboard";
+@import "faq";
+@import "ticket";
+@import "login";
+@import "header";
+@import "customTable.css";
+@import "tooltip.css";
+/*@import "inventoryModel";*/
+
+@layer base {
+
+    * {
+        scroll-behavior: smooth;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .app {
+        @apply ml-auto 2xl:w-[83%] xl:w-[79%] lg:w-[74%] md:w-[70%] sm:w-[87%] w-[81%] mt-10 mr-[1%] min-h-screen
+    }
+
+    body {
+        @apply dark:bg-darkbg bg-[#f0f0f0] min-h-screen
+    }
+
+    h1,h2,h3,h4,h5,h6,p,a {
+        @apply text-black dark:text-white
+    }
+
+    h1 {
+        @apply font-bold text-center
+        2xl:text-5xl
+        md:text-4xl
+        text-3xl
+    }
+
+    p, a {
+        @apply
+        md:text-lg
+        text-sm;
+    }
+
+    footer {
+        @apply dark:bg-slate-800 bg-gray-300 w-full pb-6 pt-6 text-center;
+    }
+
+    footer p {
+        @apply font-semibold text-base sm:text-xl inline-block text-black dark:text-white
+    }
+
+}
+

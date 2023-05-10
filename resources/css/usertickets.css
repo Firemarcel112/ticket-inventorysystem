@@ -1,0 +1,43 @@
+#usertickets {
+    @apply ml-4 sm:ml-0;
+}
+
+#usertickets h1 {
+    @apply mb-[20px];
+}
+
+#usertickets #box {
+    @apply dark:bg-condarkbg bg-white p-2 mb-[20px];
+}
+
+#usertickets #titleBox {
+    @apply pb-6 md:flex items-center dark:text-white text-black px-4;
+}
+
+#usertickets h2 {
+    @apply text-center text-[18px] sm:text-3xl text-black dark:text-white font-bold md:w-[80%] md:text-left;
+}
+
+#usertickets #ticketAmount {
+    @apply text-[18px] sm:text-3xl text-black dark:text-white font-bold text-center md:w-[20%] md:text-right;
+}
+
+#usertickets .ticket {
+    @apply mb-8;
+}
+
+
+#usertickets .box {
+    @apply sm:grid sm:grid-cols-2 p-2;
+}
+
+#usertickets .text {
+    @apply inline-block text-base sm:text-lg lg:text-xl font-bold;
+}
+#usertickets .text a {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+}
+
+#usertickets .link {
+    @apply  text-xl sm:text-2xl lg:text-3xl font-bold;
+}

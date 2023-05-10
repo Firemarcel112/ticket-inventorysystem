@@ -1,0 +1,43 @@
+/*.btn {*/
+/*    @apply flex items-center justify-center p-0.5 text-xl font-medium*/
+/*    rounded-lg text-gray-900 hover:text-white dark:text-white*/
+/*}*/
+
+/*.btn span {*/
+/*    @apply transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md px-2 py-2;*/
+/*}*/
+
+/*.btn a {*/
+/*    @apply transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md;*/
+/*}*/
+
+
+/*input[type="submit"] {*/
+/*    @apply cursor-pointer rounded w-32 py-2 text-2xl bg-main*/
+/*}*/
+
+/*.btnContent {*/
+/*    @apply transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md*/
+/*}*/
+
+/*.btn span > * {*/
+/*    @apply w-full block;*/
+/*}*/
+
+/*
+    button.btn > span > p > content
+    span.btn > a > span > content
+*/
+
+.btn {
+    @apply flex justify-center rounded-md w-fit
+}
+
+span.btn a, button.btn span {
+    @apply transition-all ease-in duration-75 dark:bg-gray-900 px-2
+}
+
+span.btn a > span, button.btn  p {
+    @apply block p-2
+}
+

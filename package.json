@@ -1,0 +1,25 @@
+{
+  "name": "sbswebdashboard",
+  "version": "1.0.0",
+  "description": "Hilfecenter für IT Fragen innerhalb der Sabine Blindow Schulen",
+  "main": "vite.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "vdev": "vite",
+    "vbuild": "vite build",
+    "build": "npx tailwindcss -i resources/css/app.css -o public/css/style.css",
+    "watch": "npx tailwindcss -i resources/css/app.css -o public/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "Marcel Bartl, Julien Baumgarten, Louis Hopp, Alfonsina Scifo,",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.2.1",
+    "tailwindcss-debug-screens": "^2.2.1"
+  }
+}

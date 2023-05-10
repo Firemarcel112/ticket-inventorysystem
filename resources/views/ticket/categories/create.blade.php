@@ -1,0 +1,33 @@
+@extends('layout.app')
+
+@section('content')
+
+    <div class="ml-4 sm:ml-0 mb-8">
+        <div class="mt-4 sm:mt-12 md:mt-16 mb-4">
+            <div class="w-full">
+                <h1 class="inline-block text-2xl sm:text-4xl">{{ $pageTitle }}</h1>
+            </div>
+        </div>
+
+        <div>
+            <form class="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%]" method="POST" action="{{ route("ticketcategoriescreate") }}">
+                @csrf
+                <x-form.input
+                    label="Kategorie"
+                    inputName="name"
+                    inputType="text"
+                    placeholder="Kategorie eingeben"
+                    :value="old('name')"
+                    setRequired="1"
+                ></x-form.input>
+
+                <div class="formButtons">
+                    <x-button content="Erstellen" colorType="success"></x-button>
+                    <x-button type="1" :link="route('ticket.categories.dashboard')" content="Abbrechen" colorType="danger"></x-button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+@endsection
