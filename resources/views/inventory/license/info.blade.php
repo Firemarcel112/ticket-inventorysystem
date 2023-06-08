@@ -8,8 +8,8 @@
         <div id="licenseInfoLink" class="hover:font-extrabold font-extrabold block w-24 h-12 flex items-center bg-gray-100 dark:bg-slate-500 border-solid border-t-4 border-t-blue-500 border-black hover:cursor-pointer" onclick="toggleLicense('licenseInfo', 'licenseUsage')">
             <span class="mx-auto text-black dark:text-white">Info</span>
         </div>
-        <div id="licenseUsageLink"class="hover:font-extrabold font-bold block w-32 h-12 flex items-center bg-gray-100 dark:bg-slate-500 border-solid border-t-4 border-t-transparent border-transparent hover:cursor-pointer" onclick="toggleLicense('licenseUsage', 'licenseInfo')">
-            <span class="mx-auto text-black dark:text-white">Asset</span>
+        <div id="licenseUsageLink" class="hover:font-extrabold font-bold block w-32 h-12 flex items-center bg-gray-100 dark:bg-slate-500 border-solid border-t-4 border-t-transparent border-transparent hover:cursor-pointer" onclick="toggleLicense('licenseUsage', 'licenseInfo')">
+            <span class="mx-auto text-black dark:text-white">Gegenstände</span>
         </div>
     </div>
     <div>
@@ -48,7 +48,7 @@
             </div>
             <div class="flex border border-0 border-b-2 border-gray-400 pb-2">
                 <p class="font-bold inline-block w-6/12 sm:w-4/12">Link zum erneuten Kaufen</p>
-                <a href="//{{$license['purchaselink']}}"class="inline-block w-6/12 sm:w-8/12 ticketDashboardHyperLinks">Link zum Kaufen</a>
+                <a href="//{{$license['purchaselink']}}" class="inline-block w-6/12 sm:w-8/12 ticketDashboardHyperLinks">Link zum Kaufen</a>
             </div>
             <div class="flex border border-0 border-b-2 border-gray-400 pb-2">
                 <p class="font-bold inline-block w-6/12 sm:w-4/12">Kaufpreis</p>
